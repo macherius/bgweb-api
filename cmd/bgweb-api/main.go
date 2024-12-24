@@ -17,8 +17,8 @@ import (
 )
 
 func main() {
-	var datadir = flag.String("datadir", "./cmd/bgweb-api/data", "Folder containing gnubg data")
-	var port = flag.Int("port", 8080, "Port for HTTP server")
+	datadir := flag.String("datadir", "./cmd/bgweb-api/data", "Folder containing gnubg data")
+	port := flag.Int("port", 8080, "Port for HTTP server")
 	flag.Parse()
 
 	if err := gnubg.Init(os.DirFS(*datadir)); err != nil {
