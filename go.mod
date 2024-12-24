@@ -1,9 +1,8 @@
 module bgweb-api
 
-go 1.18
+go 1.23.4
 
 require (
-	github.com/deepmap/oapi-codegen v1.16.3
 	github.com/flowchartsman/swaggerui v0.0.0-20221017034628-909ed4f3701b
 	github.com/getkin/kin-openapi v0.128.0
 	github.com/labstack/echo/v4 v4.13.3
@@ -17,10 +16,8 @@ require (
 )
 
 require (
-	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/swag v0.23.0 // indirect
-	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
@@ -35,5 +32,4 @@ require (
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/time v0.8.0 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
