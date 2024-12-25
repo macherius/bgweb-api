@@ -9,16 +9,16 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/deepmap/oapi-codegen/pkg/middleware"
 	"github.com/labstack/echo/v4"
 	echomiddleware "github.com/labstack/echo/v4/middleware"
+	middleware "github.com/oapi-codegen/echo-middleware"
 
 	"github.com/flowchartsman/swaggerui"
 )
 
 func main() {
-	var datadir = flag.String("datadir", "./cmd/bgweb-api/data", "Folder containing gnubg data")
-	var port = flag.Int("port", 8080, "Port for HTTP server")
+	datadir := flag.String("datadir", "./cmd/bgweb-api/data", "Folder containing gnubg data")
+	port := flag.Int("port", 8080, "Port for HTTP server")
 	flag.Parse()
 
 	if err := gnubg.Init(os.DirFS(*datadir)); err != nil {
